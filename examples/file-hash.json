@@ -1,0 +1,57 @@
+{
+  "title": "One changed letter, a different fingerprint",
+  "sources": [
+    {
+      "id": "hashlib",
+      "url": "https://docs.python.org/3/library/hashlib.html",
+      "note": "Python SHA-256 interface. Visuals are original explanations, not a recorded application run."
+    }
+  ],
+  "scenes": [
+    {
+      "title": "Give a file a fingerprint",
+      "seconds": 6,
+      "narration": "A hash gives these file bytes a short fingerprint.",
+      "action": "Build the flow from file to SHA-256 to digest; highlight each stage in order.",
+      "steps": [
+        "File bytes",
+        "SHA-256",
+        "Digest"
+      ],
+      "sources": [
+        "hashlib"
+      ],
+      "visual_basis": "original"
+    },
+    {
+      "title": "Change the input",
+      "seconds": 8,
+      "narration": "Change the bytes, then calculate again. Compare the two digests to detect a change.",
+      "action": "Keep the file object, move focus through the same pipeline and settle on compare.",
+      "steps": [
+        "Edit file",
+        "Hash again",
+        "Compare digests"
+      ],
+      "sources": [
+        "hashlib"
+      ],
+      "visual_basis": "original"
+    },
+    {
+      "title": "Know the limit",
+      "seconds": 10,
+      "narration": "A hash alone does not prove who sent a file. Verify the expected digest through a trusted channel.",
+      "action": "Keep the digest, reveal the trust check, settle on the distinction.",
+      "steps": [
+        "Digest",
+        "Trusted reference",
+        "Check match"
+      ],
+      "sources": [
+        "hashlib"
+      ],
+      "visual_basis": "original"
+    }
+  ]
+}

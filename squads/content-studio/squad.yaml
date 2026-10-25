@@ -1,0 +1,35 @@
+{
+  "name": "content-studio",
+  "version": "0.1.0",
+  "short-title": "Sourced idea to video handoff",
+  "description": "Original small content workflow: research, script, motion plan and factual review. Local handoff builder; no automatic publishing.",
+  "author": "AgentKit",
+  "license": "MIT",
+  "aiox": {
+    "type": "squad",
+    "minVersion": "2.0.0"
+  },
+  "components": {
+    "agents": [
+      "source-researcher.md",
+      "script-editor.md",
+      "motion-planner.md",
+      "factual-reviewer.md"
+    ],
+    "tasks": [
+      "source-researcher.md",
+      "script-editor.md",
+      "motion-planner.md",
+      "factual-reviewer.md"
+    ],
+    "templates": [
+      "brief-fields.md"
+    ],
+    "checklists": [
+      "handoff.md"
+    ]
+  },
+  "config": {
+    "extends": "extend"
+  }
+}
